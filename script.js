@@ -10,13 +10,13 @@ function playAudio(type) {
             audioFiles = ['audio/fair skin/aud1.mp3', 'audio/fair skin/aud2.mp3', 'audio/fair skin/aud3.mp3', 'audio/fair skin/aud4.mp3', 'audio/fair skin/aud5.mp3', 'audio/fair skin/aud6.mp3', 'audio/fair skin/aud7.mp3', 'audio/fair skin/aud8.mp3'];
             break;
         case 'dark-skin':
-            audioFiles = ['audio/dark_skin/aud1.ogg', 'audio/dark_skin/aud2.ogg', 'audio/dark_skin/aud3.ogg', 'audio/dark_skin/aud4.ogg', 'audio/dark_skin/aud5.ogg', 'audio/dark_skin/aud6.ogg', 'audio/dark_skin/aud7.ogg', 'audio/dark_skin/aud8.ogg', 'audio/dark_skin/aud9.ogg'];
+            audioFiles = ['audio/dark_skin/aud1.mp3', 'audio/dark_skin/aud2.mp3', 'audio/dark_skin/aud3.mp3', 'audio/dark_skin/aud4.mp3', 'audio/dark_skin/aud5.mp3', 'audio/dark_skin/aud6.mp3', 'audio/dark_skin/aud7.mp3', 'audio/dark_skin/aud8.mp3', 'audio/dark_skin/aud9.mp3'];
             break;
         case 'privilege':
-            audioFiles = ['audio/priv/aud.ugg', 'audio/priv/aud1.ogg', 'audio/priv/aud2.ogg', 'audio/priv/aud3.ogg', 'audio/priv/aud4.ogg', 'audio/priv/aud5.ogg', 'audio/priv/aud6.ogg', 'audio/priv/aud7.ogg'];
+            audioFiles = ['audio/priv/aud.mp3', 'audio/priv/aud1.mp3', 'audio/priv/aud2.mp3', 'audio/priv/aud3.mp3', 'audio/priv/aud4.mp3', 'audio/priv/aud5.mp3', 'audio/priv/aud6.mp3', 'audio/priv/aud7.mp3'];
             break;
         case 'discrimination':
-            audioFiles = ['audio/discr/aud1.mp3', 'audio/discr/aud2.ogg', 'audio/discr/aud3.ogg', 'audio/discr/aud4.ogg', 'audio/discr/aud5.ogg', 'audio/discr/aud6.ogg', 'audio/discr/aud7.ogg', 'audio/discr/aud8.ogg', 'audio/discr/aud9.ogg', 'audio/discr/aud10.ogg'];
+            audioFiles = ['audio/discr/aud1.mp3', 'audio/discr/aud2.mp3', 'audio/discr/aud3.mp3', 'audio/discr/aud5.mp3', 'audio/discr/aud6.mp3', 'audio/discr/aud7.mp3', 'audio/discr/aud8.mp3', 'audio/discr/aud9.mp3', 'audio/discr/aud10.mp3'];
             break;
         default:
             audioFiles = [];
