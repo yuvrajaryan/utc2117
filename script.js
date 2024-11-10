@@ -7,7 +7,7 @@ function playAudio(type) {
 
     switch (type) {
         case 'light-skin':
-            audioFiles = ['audio\fair skin\aud1.ogg'];
+            audioFiles = ['audio\fair skin\aud1.mp3'];
             break;
         case 'dark-skin':
             audioFiles = ['audio/dark-skin-1.mp3', 'audio/dark-skin-2.mp3', 'audio/dark-skin-3.mp3'];
