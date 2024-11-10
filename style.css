@@ -1,98 +1,147 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-}
-
-header {
+    height: 100vh;
     text-align: center;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
 }
 
 h1 {
-    font-size: 24px;
     color: #333;
+    animation: fadeIn 1s ease-in-out;
 }
 
-p {
+/* Animating Buttons */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button Styles */
+button {
+    padding: 15px 30px;
     font-size: 16px;
-    color: #555;
-}
-
-/* Buttons */
-.skin-tone-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
     margin: 10px;
-    font-size: 18px;
     border: none;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.skin-tone-btn:hover {
-    background-color: #45a049;
+/* Light Skin Button */
+button.light-skin {
+    background-color: #f1c27d; /* Light beige tone */
 }
 
-/* Audio Player */
-.audio-player {
-    margin-top: 20px;
+button.light-skin:hover {
+    background-color: #e0a87e; /* Darker beige for hover effect */
+    transform: scale(1.1);
 }
 
+/* Dark Skin Button */
+button.dark-skin {
+    background-color: #6f4f37; /* Dark brown tone */
+}
+
+button.dark-skin:hover {
+    background-color: #5e4433; /* Slightly darker brown for hover effect */
+    transform: scale(1.1);
+}
+
+/* Privilege Button */
+button.privilege {
+    background-color: #ffd700; /* Golden tone to represent privilege */
+}
+
+button.privilege:hover {
+    background-color: #ffcc00; /* Darker golden shade for hover */
+    transform: scale(1.1);
+}
+
+/* Discrimination Button */
+button.discrimination {
+    background-color: #808080; /* Grey tone to represent discrimination */
+}
+
+button.discrimination:hover {
+    background-color: #666666; /* Darker grey for hover effect */
+    transform: scale(1.1);
+}
+
+/* Audio Player Styling */
 audio {
+    margin-top: 20px;
     width: 100%;
-    max-width: 400px;
-    margin-top: 10px;
 }
 
 /* Feedback Section */
-.feedback {
-    margin-top: 30px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
+#userFeedback {
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        padding: 18px 35px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #userFeedback {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    audio {
+        width: 100%;
+    }
 }
 
-footer {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #888;
+@media (max-width: 900px) {
+    button {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #userFeedback {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
