@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colourism in the Indian Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exploring Colourism in the Indian Community</h1>
+        <p>Click on a skin tone to hear personal experiences of colourism.</p>
+    </header>
+
+    <div class="content">
+        <section class="audio-buttons">
+            <button class="skin-tone-btn" onclick="playAudio('light-skin')">Light Skin</button>
+            <button class="skin-tone-btn" onclick="playAudio('dark-skin')">Dark Skin</button>
+            <button class="skin-tone-btn" onclick="playAudio('privilege')">Privilege</button>
+            <button class="skin-tone-btn" onclick="playAudio('discrimination')">Discrimination</button>
+        </section>
+
+        <section class="audio-player">
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section class="feedback">
+            <h2>Share Your Thoughts</h2>
+            <textarea id="userFeedback" placeholder="Write your reflection here..."></textarea>
+            <button onclick="submitFeedback()">Submit</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Colourism Exhibition</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
